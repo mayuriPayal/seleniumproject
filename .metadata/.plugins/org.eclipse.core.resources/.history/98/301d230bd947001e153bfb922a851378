@@ -1,0 +1,23 @@
+
+public class assignmentoperators {
+
+	public static void main(String[] args) {
+
+		int a,b,c,d,e;
+		
+	a=10;
+	/*a+=5;
+	b=+15;
+	a-=5;
+	a*=5;
+	a/=10;
+	a%=5;*/
+	a++;
+	
+	
+	
+	System.out.println(a);
+		
+	}
+
+}

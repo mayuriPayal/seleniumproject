@@ -1,0 +1,16 @@
+package access;
+
+public class stringsconcat {
+
+	public static void main(String[] args) {
+String s1=new String("welcome");
+String s2=new String ("to java");
+String s3=new String ("automation");
+System.out.println(s1.concat(s2));
+System.out.println(s1.concat(s2).concat(s3));
+s1= "    automation  ";
+//System.out.println(s1.trim());
+System.out.println(s1);
+	}
+
+}

@@ -1,0 +1,21 @@
+package Data_Cause;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class drp {
+
+	public static void main(String[] args) {
+		WebDriverManager.chromedriver().setup();
+	    ChromeDriver d=new ChromeDriver();
+	    d.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	    d.get("https://demo.guru99.com/test/radio.html");
+	    d.manage().window().maximize();
+	   d.findElement(By.id("vfb-6-1")).click();
+	    	}
+
+}

@@ -1,0 +1,27 @@
+package Data_Cause;
+
+import java.time.Duration;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class alert {
+
+	public static void main(String[] args) throws InterruptedException {
+        
+		WebDriver d=new ChromeDriver();
+		
+		d.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
+		d.get("https://the-internet.herokuapp.com/javascript_alerts");
+		d.findElement(By.xpath("//*[@id=\"content\"]/div/ul/li[1]/button")).click();
+		Alert alertwindow=d.switchTo().alert();
+		//alertwindow.accept();
+		Thread.sleep(5000);
+		alertwindow.dismiss();
+		
+	}
+
+}

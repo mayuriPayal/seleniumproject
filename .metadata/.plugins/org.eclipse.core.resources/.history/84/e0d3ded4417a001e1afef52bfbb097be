@@ -1,0 +1,33 @@
+package Data_driven;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class Write {
+
+	public static void main(String[] args) throws IOException {
+
+		FileOutputStream file=new FileOutputStream("D:\\seleniumworkspace\\seleniumproject\\testdata\\payal.xlsx");
+		XSSFWorkbook workbook=new XSSFWorkbook();
+		XSSFSheet sheet=workbook.createSheet();
+		
+		XSSFRow row=sheet.createRow(0);
+		
+		row.createCell(0).setCellValue("i");
+		row.createCell(1).setCellValue("love");
+		row.createCell(2).setCellValue("pizza");
+		
+		XSSFRow row1=sheet.createRow(0);
+		row1.createCell(0).setCellValue("2");
+		row1.createCell(1).setCellValue("3");
+		row1.createCell(2).setCellValue("4");
+		
+		workbook.write(file);
+		
+	}
+
+}

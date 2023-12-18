@@ -1,0 +1,37 @@
+
+public class classandobj {
+	/*int a=10;
+	String s="mayu";
+	String t="job";
+	
+	void show()
+	{
+		System.out.println(a);
+		System.out.println(s);
+		System.out.println(t);
+	}
+
+	public static void main(String[] args) {
+		
+		classandobj obj=new classandobj();
+		obj.show();*/
+	//int a;
+	Integer a=10;
+	String s;
+	String t;
+	
+	void show()
+	{
+		System.out.println(a);
+		System.out.println(s);
+		System.out.println(t);
+	}
+
+	public static void main(String[] args) {
+		classandobj obj=new classandobj();
+		obj.a=10;
+		obj.show();
+		
+	}
+
+}

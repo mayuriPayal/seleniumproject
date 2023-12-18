@@ -1,0 +1,26 @@
+
+public class construction {
+
+	 
+
+		int a;
+		String name;
+		
+		construction()
+		{
+			a=10;
+			name="john";
+		}
+		
+	void display()
+	{
+		System.out.println(a  +   name);
+	}
+
+	private static void construction() {
+		construction obj=new construction();
+		obj.display();
+		
+	}
+
+}

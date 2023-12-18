@@ -1,0 +1,36 @@
+package mavenselenium_1;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class lock {
+
+	public static void main(String[] args) {
+
+		ChromeDriver driver=new ChromeDriver();
+		
+	/*	driver.get("https://www.orangehrm.com/en/contact-sales/");
+		driver.manage().window().maximize();
+		//name locator
+		driver.findElement(By.name("FullName")).sendKeys("mayu");
+		//id locator
+		driver.findElement(By.id("Form_getForm_Contact")).sendKeys("356457");
+		//link locator
+		driver.findElement(By.name("Email")).sendKeys("mayu@gmail.com");*/
+		driver.get("http://www.automationpractice.pl/index.php");
+		/*driver.findElement(By.id("search_query_top")).sendKeys("T-shirt");
+        driver.findElement(By.name("submit_search")).click();
+        driver.findElement(By.linkText("Printed Chiffon Dress")).click();*/
+		List<WebElement> check=driver.findElements(By.className("homeslider-container"));
+		System.out.println(check.size());
+	/*	List<WebElement> img=driver.findElements(By.tagName("img"));
+		System.out.println(img.size());
+		List<WebElement> link=driver.findElements(By.tagName("a"));
+		System.out.println(link.size());*/
+		
+	}
+
+}

@@ -1,0 +1,32 @@
+package access;
+
+public class stringsconcat {
+
+	public static void main(String[] args) {
+String s1=new String("welcome");
+String s2=new String ("to java");
+String s3=new String ("automation");
+System.out.println(s1.concat(s2));
+System.out.println(s1.concat(s2).concat(s3));
+s1= "    automation  ";
+//System.out.println(s1.trim());
+System.out.println(s1);
+System.out.println(s1.length());
+System.out.println(s1.trim().length());
+System.out.println(s1.charAt(3));
+System.out.println(s1.trim());
+s2="automation";
+System.out.println(s2.charAt(2));
+System.out.println(s2.contains(s3));
+System.out.println(s2.contains("auto"));
+s3="welcome";
+String s4="WELCOME";
+System.out.println(s3.equals(s4));
+System.out.println(s3.equalsIgnoreCase(s4));
+System.out.println(s4.replace('E', 'x'));
+
+
+	}
+
+}
+	

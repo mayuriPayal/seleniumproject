@@ -1,0 +1,12 @@
+package dataconversion;
+
+public class conversion {
+
+	public static void main(String[] args) {
+ String x="10";
+ String y="20";
+ 
+ System.out.println(Integer.parseInt(x));
+	}
+
+}

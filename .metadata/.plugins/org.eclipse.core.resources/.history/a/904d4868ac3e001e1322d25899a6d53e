@@ -1,0 +1,13 @@
+package basic;
+
+public class wapperclass {
+
+	public static void main(String[] args) {
+
+	//	int x=100;
+		Integer x=100;
+		System.out.println(x);
+			
+	}
+
+}

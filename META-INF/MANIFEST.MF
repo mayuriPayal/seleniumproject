@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Created-By: mergejars
+Main-Class: org.openqa.selenium.grid.Bootstrap
+
+Name: Build-Info
+Selenium-Version: 4.11.0
+Build-Revision: 040bc5406b
+Build-Time: Mon Jul 31 21:51:39 CEST 2023
+

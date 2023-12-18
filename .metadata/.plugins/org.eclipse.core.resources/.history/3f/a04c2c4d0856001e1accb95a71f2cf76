@@ -1,0 +1,29 @@
+package Basic_selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+import com.github.dockerjava.api.model.Driver;
+
+public class selectDp {
+
+	public static void main(String[] args) {
+
+		ChromeDriver driver=new ChromeDriver();
+		driver.get("https://www.orangehrm.com/en/contact-sales/");
+	WebElement dropdw=	driver.findElement(By.name("Country"));
+	Select country=new Select(dropdw);
+	country.selectByValue("India");
+		
+		
+		
+		
+		
+		
+			
+		
+	}
+
+}

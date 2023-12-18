@@ -1,0 +1,29 @@
+package Data_Cause;
+
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WindowType;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class DIFF_TAB {
+
+	public static void main(String[] args) {
+	
+		WebDriver d=new ChromeDriver();
+		
+		d.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
+		d.get("https://demo.nopcommerce.com/register");
+		
+		//d.switchTo().newWindow(WindowType.TAB);
+		
+		d.switchTo().newWindow(WindowType.WINDOW);
+		
+		d.get("https://www.orangehrm.com/");
+		
+		
+		
+	}
+
+}

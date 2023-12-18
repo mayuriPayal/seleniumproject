@@ -1,0 +1,68 @@
+package Data_Cause;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class dataprovider {
+	WebDriver d;
+	
+	@BeforeClass
+	void setup()
+	{
+		WebDriverManager.chromiumdriver().setup();
+		d=new ChromeDriver();
+		
+	}
+	
+	@Test(dataProvider="dp")
+void login(String email,String pas)
+	{
+		d.get("https://demo.nopcommerce.com/login");
+		d.findElement(By.id("Email")).sendKeys(email);
+		d.findElement(By.id("Password")).sendKeys(pas);
+		d.findElement(By.xpath("//button[contains(text(),'Log in')]")).click();
+	
+
+		String exp_title = "nopCommerce demo store";
+		String act_title = d.getTitle();
+
+		Assert.assertEquals(exp_title, act_title);
+	
+	}
+	
+	
+	@AfterClass
+	void logout()
+	{
+		d.quit();
+	}
+
+	
+	@DataProvider(name="dp")
+	
+	String [][] ogindata()
+	
+	{
+		String data[][]= { { "abc@gmail.com", "test123" }, 
+				{ "pavanol@gmail.com", "test@123" },
+				{ "mayurisatpute@","mayuri" },
+				{ "pavanoltraining@gmail.com", "test@123" },
+				{ "pavanoltraining@gmail.com", "test@123" } 
+			};
+		
+		
+		return data;
+	}
+		
+		
+		
+	}	
+

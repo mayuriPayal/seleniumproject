@@ -1,0 +1,26 @@
+package mavenselenium_1;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class lock {
+
+	public static void main(String[] args) {
+
+		ChromeDriver driver=new ChromeDriver();
+	/*	driver.get("https://www.orangehrm.com/en/contact-sales/");
+		driver.manage().window().maximize();
+		//name locator
+		driver.findElement(By.name("FullName")).sendKeys("mayu");
+		//id locator
+		driver.findElement(By.id("Form_getForm_Contact")).sendKeys("356457");
+		//link locator
+		driver.findElement(By.name("Email")).sendKeys("mayu@gmail.com");*/
+		driver.get("http://automationpractice.com/index.php");
+		
+
+		
+	
+	}
+
+}

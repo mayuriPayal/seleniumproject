@@ -1,0 +1,39 @@
+
+
+class arra
+{
+int a=100;
+	
+	void display()
+	{
+		System.out.println(a);
+	}	
+	
+}
+
+ class b extends arra
+ {
+	 int b=500;
+		
+		void show()
+		{
+			System.out.println(b);
+		} 
+ }
+
+	
+
+public class inherit {
+
+	
+	public static void main(String[] args)
+	
+	{
+		b obj =new b ();
+		obj.show();
+		obj.display();
+	
+	}
+
+}
+

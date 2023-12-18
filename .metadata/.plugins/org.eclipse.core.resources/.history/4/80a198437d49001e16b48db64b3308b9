@@ -1,0 +1,14 @@
+
+public class staticMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//System.out.println(a);
+		System.out.println(staticexample.a);
+		
+			//m1();
+			staticexample ob = new staticexample();
+			ob.m();
+		}
+}

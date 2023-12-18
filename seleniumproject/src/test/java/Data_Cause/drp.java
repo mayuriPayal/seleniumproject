@@ -1,0 +1,43 @@
+package Data_Cause;
+
+import java.time.Duration;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class drp {
+
+	public static void main(String[] args) {
+		WebDriverManager.chromedriver().setup();
+	    ChromeDriver d=new ChromeDriver();
+	    d.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	    d.get("https://demo.guru99.com/test/radio.html");
+	    d.manage().window().maximize();
+	    List<WebElement> list= d.findElements(By.xpath("//input[@type='checkbox' and @name='webform']"));
+	    
+	//   System.out.print(list.size());
+	    
+	  /*  for(WebElement x: list)
+	    {
+	    	x.click();
+	    	
+	    }*/
+	    
+	   /* for( int i=0;i<2;i++)
+	    {
+	    	list.get(i)	.click();
+	    }*/
+	    
+	    for( int i=2;i<list.size();i++)
+	    {
+	    	list.get(i)	.click();
+	    }
+	    
+	    
+	    	}
+
+}

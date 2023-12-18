@@ -1,0 +1,38 @@
+
+public class ifstatement {
+
+	public static void main(String[] args) {
+int a=30;
+int b=30;
+/*
+		if(a>b)
+		{
+			System.out.println("greater");
+		}
+		else
+		{
+			System.out.println("smaller");
+		}*/
+/*int personage = 18;
+
+if( personage >=18)
+{
+	System.out.println("eligible");
+}	
+	else
+	{
+		System.out.println("not eligible");
+	}*/
+
+if(a%2==0)
+{
+	System.out.println("even");
+}
+else
+{
+	System.out.println("odd");
+}
+}
+	}
+
+

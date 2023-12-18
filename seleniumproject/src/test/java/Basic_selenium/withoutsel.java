@@ -1,0 +1,38 @@
+package Basic_selenium;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class withoutsel {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		ChromeDriver driver=new ChromeDriver();
+		Thread.sleep(1000);
+    driver.get("https://www.jquery-az.com/boots/demo.php?ex=63.0_2");
+    driver.manage().window().maximize();
+   
+driver.findElement(By.xpath("/html/body/div[3]/table/tbody/tr[2]/td[3]/div/span/div/button")).click();
+	
+	List<WebElement>opt = driver.findElements(By.xpath("//ul[contains(@class,multiselect)]//label"));
+System.out.println(opt.size());
+
+/*for(WebElement wc:opt)
+{
+	System.out.println(wc.getText());
+}*/
+for(WebElement wc: opt)
+{
+	if(wc.getText().equals("Java"))
+	{
+	wc.click();
+	}
+}
+	
+	
+	}
+
+}

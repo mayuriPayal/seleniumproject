@@ -1,0 +1,19 @@
+package dataconversion;
+
+public class conversion {
+
+	public static void main(String[] args) {
+ String x="10";
+ String y="20";
+ // string to int
+
+ System.out.println(Integer.parseInt(x));
+ System.out.println(Integer.parseInt(y));
+ 
+ //string to double
+ System.out.println(Double.parseDouble(x));
+ System.out.println(Double.parseDouble(y));
+
+	}
+
+}

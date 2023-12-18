@@ -1,0 +1,10 @@
+
+public class string {
+
+	public static void main(String[] args) {
+String s="welcome";
+String t="to java";
+String u="automation";
+System.out.println(s + t + u);}
+
+}

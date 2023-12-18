@@ -1,0 +1,33 @@
+package Data_Cause;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+public class Assertation {
+	
+@Test	
+/*void main()
+{
+	Assert.assertEquals(1, 2,"fail");
+	
+}*/
+
+void main()
+{
+	SoftAssert sa=new SoftAssert();
+	sa.assertEquals(1, 2);
+	
+	sa.assertAll();
+	
+}
+@Test
+void main1()
+{
+	SoftAssert sa=new SoftAssert();
+	
+	sa.assertEquals(1, 1);
+	sa.assertAll();
+	
+}
+}

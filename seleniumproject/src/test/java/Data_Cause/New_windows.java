@@ -1,0 +1,38 @@
+package Data_Cause;
+
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WindowType;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class New_windows {
+
+	public static void main(String[] args) throws InterruptedException {
+
+		
+	WebDriverManager.chromedriver().setup();
+		WebDriver d=new ChromeDriver();
+		d.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		d.get("https://www.opencart.com/");
+		d.switchTo().newWindow(WindowType.TAB);
+		d.get("https://opensource-demo.orangehrmlive.com/");
+		
+		
+		
+	/*	WebDriverManager.chromedriver().setup();
+		WebDriver d=new ChromeDriver();
+		d.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		d.get("https://www.opencart.com/");
+		d.switchTo().newWindow(WindowType.WINDOW);
+		d.get("https://opensource-demo.orangehrmlive.com/");
+		Thread.sleep(5000);
+        d.navigate().back();	*/	
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,20 @@
+package Basic_selenium;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Sliding {
+
+	public static void main(String[] args) {
+		WebDriver driver=new ChromeDriver();
+		driver.get("http://www.automationpractice.pl/index.php");
+/*	List<WebElement> sliders= driver.findElements(By.className("homeslider-container"));
+sliders.size();*/
+		driver.findElements(By.className("homeslider-container")).size();
+	}
+
+}

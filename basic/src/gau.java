@@ -1,0 +1,35 @@
+
+public class gau {
+
+	private	int a;
+		String str="jonhn";
+		
+		
+
+		public int getA() {
+			return a;
+		}
+
+		public void setA(int a) {
+			this.a = a;
+		}
+
+		public String getStr() {
+			return str;
+		}
+
+		public void setStr(String str) {
+			this.str = str;
+		}
+		public static void main(String[] args) {
+
+			gau obj =new gau();
+			
+			obj.setA(5);
+			System.out.println(obj.getA());
+			System.out.println(obj.getStr());
+			
+			
+			
+		}
+}

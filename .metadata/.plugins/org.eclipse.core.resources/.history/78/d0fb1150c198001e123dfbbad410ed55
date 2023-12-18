@@ -1,0 +1,18 @@
+package Data_Cause;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.JavascriptExecutor;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class scrolling {
+
+	public static void main(String[] args) {
+    WebDriverManager.chromedriver().setup();
+    ChromeDriver d=new ChromeDriver();
+    d.get("https://www.countries-ofthe-world.com/flags-of-the-world.html");
+    d.manage().window().maximize();
+    JavascriptExecutor js=d;
+	}
+
+}
